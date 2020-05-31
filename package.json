@@ -1,0 +1,51 @@
+{
+  "name": "@pavelkucera/nestjs-swagger-metadata",
+  "author": "Pavel Kucera",
+  "description": "Experiment: interface for setting Nestjs's Swagger/OpenApi metadata",
+  "license": "MIT",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prettier": "prettier --config .prettierrc --check src/**/*.ts test/**/*.ts",
+    "prettier:fix": "npm run prettier -- --write",
+    "test": "jest",
+    "typecheck": "tsc --noEmit",
+    "typecheck:watch": "tsc --noEmit --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pavelkucera/nestjs-swagger-metadata.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pavelkucera/nestjs-swagger-metadata/issues"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "dependencies": {},
+  "peerDependencies": {
+    "fp-ts": "^2.6.1",
+    "@nestjs/swagger": "^4.5.9",
+    "io-ts": "^2.2.2"
+  },
+  "devDependencies": {
+    "@nestjs/common": "7.1.1",
+    "@nestjs/core": "7.1.1",
+    "@nestjs/swagger": "4.5.9",
+    "@types/jest": "^25.2.3",
+    "@types/node": "^14.0.6",
+    "class-transformer": "0.2.3",
+    "class-validator": "0.12.2",
+    "fp-ts": "^2.6.2",
+    "io-ts": "^2.2.4",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "reflect-metadata": "0.1.13",
+    "rxjs": "6.5.5",
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.9.3"
+  }
+}
